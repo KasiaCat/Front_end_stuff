@@ -1,4 +1,5 @@
-html, body, h1, div, footer, header, section {
+html, body, h1, div, .footer, .header,
+.section, .content .lista {
   padding: 0;
   border: 0;
   margin: 0;
@@ -12,22 +13,50 @@ html {
   background-color: inherit;
 }
 
-header {
+.content {
+  width: 30em;
+  padding: 0.8em;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.elements li  {
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    list-style-type: none;
+    display: inline;
+    white-space: nowrap;
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
   float: none;
   text-decoration: none;
   padding: 1em 0;
   text-align: center;
+  font-weight:bolder;
+  font-size: 1.3em;
+}
+
+.footer {
+  display:inherit;
   font-weight: bold;
 }
 
-footer {
-  display: inline;
-  margin: auto 1em auto auto;
-  font-weight: bold;
-  text-align:center;
+.mail {
+  text-align: center;
 }
 
-section {
+.section {
   float: none;
   margin: 1em auto 8em 1em;
 }
@@ -67,14 +96,14 @@ a {
   color: #FFFFFF;
 }
 
-section a, footer a, header a {
+.section a, .footer a, .header a  {
    color: inherit;
 }
 
-section a:hover {
+.section a:hover {
   color: #33CC66;
 }
-footer a:hover {
+.footer a:hover {
   color: hsl(30, 100%, 50%);
 }
 
@@ -82,14 +111,13 @@ footer a:hover {
   color: #330066;
 }
 
-header a:hover {
+.header a:hover {
   color: #CC0033;
 }
-
-.menu a:active, section a:active, footer a:active {
+.menu a:active, .section a:active, .footer a:active {
   color: #900000;
 }
 
-.menu a:visited, section a:visited, footer a:visited {
+.menu a:visited, .section a:visited, .footer a:visited {
   color: #780000;
 }

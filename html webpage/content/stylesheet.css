@@ -1,12 +1,11 @@
-html, body, h1, div, .footer, .header,
+html, body, h1, div, .footer, .header, .moi,
 .section, .content .lista {
   padding: 0;
   border: 0;
   margin: 0;
   font: inherit;
   font-size: 100%;
-  font-family: Georgia, serif;
-  background-color: #F8F8F8;
+  font-family: Georgia, sans-serif;
 }
 
 html {
@@ -14,21 +13,22 @@ html {
 }
 
 .content {
-  width: 30em;
-  padding: 0.8em;
+  margin: auto 1em auto 1em;
   white-space: nowrap;
   overflow: visible;
 }
 
-.elements li  {
-    width: 5em;
-    height: 5em;
-    text-align: center;
+.elements li, .elements2 li  {
+    line-height: normal;
     list-style-type: none;
     display: inline;
     white-space: nowrap;
+    overflow: hidden;
 }
 
+.elements2 {
+  margin-top: 3em;
+}
 
 *,
 *:before,
@@ -65,28 +65,32 @@ html {
   font-weight: bold;
 }
 
-.title h1 {
+.moi {
   font-size: 1.3em;
-  padding: 0.7em 0 0.7em 0;
+  font-weight: bold;
   color:  #383838;
   text-decoration: none;
-  text-shadow: 0 0 6px #505050;
+  text-shadow: 0 0 14px #505050;
   text-align: center;
-  margin: 0.4em auto auto auto;
-  float: none;
+}
+
+.background {
+  background-color: #F8F8F8;
 }
 
 .title {
+  border-bottom-style: groove;
+  border-bottom-width: 0.3em;
+  border-bottom-color: #505050;
   background-color: #FFFFFF;
-  padding: 1em 0 1em 0;
   text-align: center;
 }
 
 .menu {
-  background-color: rgb(180, 140, 182);
+  background-color: rgb(183, 187, 199);
   padding: 0.8em 0 0.8em 0;
   text-align: center;
-  margin: 0.4em auto auto auto;
+  margin: 0.1em auto auto auto;
 }
 
 a {

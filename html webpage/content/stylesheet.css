@@ -5,7 +5,9 @@ html, body, h1, div, .footer, .header, .moi,
   margin: 0;
   font: inherit;
   font-size: 100%;
+  line-height: normal;
   font-family: Georgia, sans-serif;
+  font-style: normal;
 }
 
 html {
@@ -13,7 +15,7 @@ html {
 }
 
 .content {
-  margin: auto 1em auto 1em;
+  /*margin: auto 0 auto 0;*/
   white-space: nowrap;
   overflow: visible;
 }
@@ -21,9 +23,11 @@ html {
 .elements li, .elements2 li  {
     line-height: normal;
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     white-space: nowrap;
     overflow: hidden;
+    vertical-align: top;
+    margin: auto 0.2em 1em 0.1em;
 }
 
 .elements2 {
